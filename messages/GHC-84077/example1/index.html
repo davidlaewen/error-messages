@@ -5,8 +5,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex">
-        <title> — Haskell Error Index</title>
+        <title>Missing space before type application — Haskell Error Index</title>
         <link rel="stylesheet" href="../../../css/default.css" />
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <script src="../../../js/highlight.min.js"></script>
     </head>
     <body>
         <header>
@@ -27,20 +29,13 @@
               
                 <a href="../../../messages/index.html">Messages</a>&nbsp;»
               
-                <a href="../../../messages/GHC-84077/index.html">Type Application Without Space [GHC-84077]</a>&nbsp;»
+                <a href="../../../messages/GHC-84077/index.html">Type application without space [GHC-84077]</a>&nbsp;»
               
-              
+              Missing space before type application
             </nav>
-            <h1></h1>
-            <table>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">title: Missing space before type application</td>
-</tr>
-</tbody>
-</table>
-<p>There is no space before the type application <code>@Int</code>.</p>
-<p>## Error Message</p>
+            <h1>Missing space before type application</h1>
+            <p>There is no space before the type application <code>@Int</code>.</p>
+<h2 id="error-message">Error Message</h2>
 <pre><code>MissingSpaceTypeOperator.hs:6:7: error:
     @-pattern in expression context: x@Int
     Type application syntax requires a space before '@'
@@ -48,9 +43,9 @@
 6 | f x = x@Int
   |       ^^^^^</code></pre>
 
-<ul>
-
-</ul>
+<table width="100%">
+  
+</table>
 
         </main>
 
@@ -63,5 +58,9 @@
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
           </p>
         </footer>
+
+        <script>document.querySelectorAll('code.language-haskell').forEach(el => {
+          hljs.highlightElement(el);
+        });</script>
     </body>
 </html>
